@@ -30,7 +30,7 @@ function ImportCoin() {
   useEffect(() => {
     async function getTokens() {
       const coin = await axios.get(
-        "https://blocksimul-backend.onrender.com/coins"
+        "https://krypt-wallet.onrender.com/coins"
       );
 
       let cois = [];

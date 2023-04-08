@@ -31,7 +31,7 @@ export default function OTPForm({ nextStep, setStatus }) {
     // console.log(email);
     async function sendCode() {
       const message = await axios.post(
-        "https://blocksimul-backend.onrender.com/users/send%20verification%20code/otp",
+        "https://krypt-wallet.onrender.com/users/send%20verification%20code/otp",
         {
           email: email.email,
         },

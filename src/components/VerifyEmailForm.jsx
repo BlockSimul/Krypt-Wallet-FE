@@ -27,7 +27,7 @@ export default function VerifyEmailForm({ setStep, setStatus }) {
   useEffect(() => {
     async function sendCode() {
       const message = await axios.post(
-        "https://blocksimul-backend.onrender.com/users/send%20verification%20code/verify",
+        "https://krypt-wallet.onrender.com/users/send%20verification%20code/verify",
         {
           email: email?.email,
         },

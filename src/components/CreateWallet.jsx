@@ -46,7 +46,7 @@ function CreateWallet() {
   useEffect(() => {
     async function getTokens() {
       const coins = await axios.get(
-        "https://blocksimul-backend.onrender.com/coins"
+        "https://krypt-wallet.onrender.com/coins"
       );
       setCoins(coins.data);
       console.log(coins.data);
