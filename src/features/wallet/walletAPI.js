@@ -3,7 +3,7 @@
 import axios from "axios";
 
 // const devurl = "http://localhost:4000";
-const liveurl = "https://blocksimul-backend.onrender.com";
+const liveurl = "https://krypt-wallet.onrender.com";
 export async function createWallet({ type, coins, token }) {
   const newWallet = await axios(`${liveurl}/wallet`, {
     method: "POST",

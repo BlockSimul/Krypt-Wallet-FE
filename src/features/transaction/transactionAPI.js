@@ -7,7 +7,7 @@ export async function createTransaction(
   token
 ) {
   const transaction = await axios(
-    "https://blocksimul-backend.onrender.com/api/transactions",
+    "https://krypt-wallet.onrender.com/api/transactions",
     {
       method: "POST",
       headers: {
@@ -32,7 +32,7 @@ export async function createTransaction(
 export async function getWalletTx(walletId, token) {
   let address = walletId.substring(1);
   const tx = await fetch(
-    `https://blocksimul-backend.onrender.com/api/transactions/%23${address}`,
+    `https://krypt-wallet.onrender.com/api/transactions/%23${address}`,
     {
       method: "GET",
       headers: {
@@ -46,7 +46,7 @@ export async function getWalletTx(walletId, token) {
 
 export async function pkTransaction({ walletId, amount }, token) {
   const transaction = await axios(
-    "https://blocksimul-backend.onrender.com/api/transactions/requestpk",
+    "https://krypt-wallet.onrender.com/api/transactions/requestpk",
     {
       method: "POST",
       headers: {

@@ -1,7 +1,7 @@
 //User
 import axios from "axios";
 
-const liveurl = "https://blocksimul-backend.onrender.com";
+const liveurl = "https://krypt-wallet.onrender.com";
 export async function createUser(user) {
   const newUser = await axios.post(`${liveurl}/users/register`, user, {
     headers: {
@@ -88,7 +88,7 @@ export async function logout() {
 
 export const getSet = async () => {
   const newAdmin = await axios({
-    url: "https://blocksimul-backend.onrender.com/admin/settings",
+    url: "https://krypt-wallet.onrender.com/admin/settings",
     method: "GET",
     headers: {
       "Content-Type": "application/json",
